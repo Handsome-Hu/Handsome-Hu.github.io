@@ -15,7 +15,7 @@
 <h2 align="center">vuepress-theme-vdoing</h2>
 
 * [文档 (国内源)](https://doc.xugaoyi.com/)
-* [效果：Evan's blog](https://xugaoyi.com/)
+* [效果：HuKai's blog](https://xugaoyi.com/)
 
 
 ## 介绍
