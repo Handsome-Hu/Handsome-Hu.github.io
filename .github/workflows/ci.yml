@@ -30,26 +30,3 @@ jobs:
         env: # 设置环境变量
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
         run: npm install && npm run deploy
-      - name: Async Github Branch To Gitee
-        uses: shanghaobo/github-branch-gitee@v1.0.0
-        with:
-          github_repo: handsome-hu/handsome-hu.github.io
-          github_branch: gh-pages
-          gitee_repo: impluvious/impluvious
-          gitee_branch: master
-          username: impluvious
-          password: ${{ secrets.GITEE_PASSWORD }}
-      - name: Build Gitee Pages # 更新Gitee Pages
-        uses: yanglbme/gitee-pages-action@master
-        with:
-          gitee-username: impluvious
-          gitee-password: ${{ secrets.GITEE_PASSWORD }}
-          gitee-repo: impluvious/impluvious
-      # - name: Build and Deploy # 步骤3 （只提交到github可以使用这个步骤）
-      #   uses: JamesIves/github-pages-deploy-action@master # 作用：将项目构建和部署到github。 https://github.com/JamesIves/github-pages-deploy-action
-      #   env: # 设置环境变量
-      #     ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
-      #     BASE_BRANCH: master # 要部署的文件夹所在的分支.
-      #     BRANCH: gh-pages # 部署到的分支
-      #     FOLDER: docs/.vuepress/dist # 要部署的文件夹.
-      #     BUILD_SCRIPT: npm install && npm run build && cd docs/.vuepress/dist && echo 'xugaoyi.com' > CNAME && cd - # 部署前要执行的命令（记得cd进入某个目录后，后面要cd -退回开始的目录）
