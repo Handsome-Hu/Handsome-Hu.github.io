@@ -27,17 +27,17 @@ git commit -m "${msg}"
 git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
 
 # 发布到码云
-if [ -z "$GITEE_TOKEN" ]; then
-  msg='deploy'
-  giteeUrl=git@gitee.com:impluvious/impluvious.git
-else
-  msg='来自Github Actions的自动部署'
-  giteeUrl=https://impluvious:${GITEE_TOKEN}@gitee.com/impluvious/impluvious.git
-fi
-git init
-git add -A
-git commit -m "${msg}"
-git push -f $giteeUrl master # 推送到gitee
+#if [ -z "$GITEE_TOKEN" ]; then
+#  msg='deploy'
+#  giteeUrl=git@gitee.com:impluvious/impluvious.git
+#else
+#  msg='来自Github Actions的自动部署'
+#  giteeUrl=https://impluvious:${GITEE_TOKEN}@gitee.com/impluvious/impluvious.git
+#fi
+#git init
+#git add -A
+#git commit -m "${msg}"
+#git push -f $giteeUrl master # 推送到gitee
 
 # deploy to coding pages
 # echo 'www.xugaoyi.com\nxugaoyi.com' > CNAME  # 自定义域名
