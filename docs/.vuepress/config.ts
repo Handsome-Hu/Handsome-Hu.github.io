@@ -1,6 +1,7 @@
 import { resolve } from 'path'
 import { defineConfig4CustomTheme } from 'vuepress/config'
 import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
+// @ts-ignore
 import dayjs from 'dayjs'
 import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
@@ -209,7 +210,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
-    ['meta', { name: 'theme-color', content: '#f62c36' }], // 移动浏览器主题颜色
+    ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
     // [
     //   'script',
     //   {
