@@ -6,7 +6,7 @@ tagline: 全桟开发博客，记录学习中的点点滴滴。
 # actionText: 立刻进入 →
 # actionLink: /web/
 # bannerBg: auto # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
-bannerBg: /img/bg.jpeg
+bannerBg: https://blog-1259322452.cos.ap-guangzhou.myqcloud.com/my/bg.jpeg
 
 features: # 可选的
   - title: 前端
@@ -15,7 +15,7 @@ features: # 可选的
     imgUrl: /img/web.png # 可选
   - title: 后端
     details: Java、微服务、分布式等后端技术栈
-    link: /ui/
+    link: /backend/
     imgUrl: /img/hkj.png
   - title: 技术
     details: 数据结构、设计模式、DevOps等核心技术
