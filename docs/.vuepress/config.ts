@@ -59,25 +59,25 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                     {
                         text: 'Java核心技术',
                         items: [
-                            {text: 'Java基础', link: '/catalog/000/'},
-                            {text: 'Java并发编程', link: '/catalog/000/'},
-                            {text: 'Java虚拟机', link: '/catalog/000/'},
+                            {text: 'Java基础', link: '/catalog/100/'},
+                            {text: 'Java并发编程', link: '/catalog/101/'},
+                            {text: 'Java虚拟机', link: '/catalog/102/'},
                         ]
                     },
                     {
                         text: '开源框架',
                         items: [
-                            {text: 'Spring5', link: '/catalog/100/'},
-                            {text: 'SpringMVC', link: '/catalog/101/'},
-                            {text: 'MyBatis', link: '/catalog/102/'},
-                            {text: 'SpringBoot', link: '/catalog/103/'},
+                            {text: 'Spring5', link: '/catalog/110/'},
+                            {text: 'SpringMVC', link: '/catalog/111/'},
+                            {text: 'MyBatis', link: '/catalog/112/'},
+                            {text: 'SpringBoot', link: '/catalog/113/'},
                         ]
                     },
                     {
                         text: '数据存储',
                         items: [
-                            {text: 'MySQL', link: '/catalog/110/'},
-                            {text: 'Redis', link: '/catalog/111/'},
+                            {text: 'MySQL', link: '/catalog/120/'},
+                            {text: 'Redis', link: '/catalog/121/'},
                         ]
                     },
                     {
