@@ -291,6 +291,22 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
         // 全文搜索
         'fulltext-search': {},
+        // 鼠标点击效果
+        'cursor-effects': {},
+        // 一条漂亮的彩带
+        'ribbon': {},
+        // 音乐效果
+        'meting': {
+            meting: {
+                server: 'netease',
+                type: 'playlist',
+                mid: '7199032776',
+            },
+            aplayer: {
+                lrcType: 3,
+                preload: 'metadata',
+            },
+        },
 
         // 可以添加第三方搜索链接的搜索框（继承原官方搜索框的配置参数）
         // 'thirdparty-search': {
@@ -361,8 +377,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                 id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
                 title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
                 labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
-                body:
-                    '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
+                body: '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
             },
         },
 
