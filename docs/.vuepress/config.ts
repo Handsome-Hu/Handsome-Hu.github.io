@@ -127,6 +127,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                         items: [
                             {text: 'GitHub技巧', link: '/catalog/300/'},
                             {text: '博客搭建', link: '/catalog/301/'},
+							{text: '技术笔记', link: '/catalog/302/'},
                         ]
                     },
                     {
