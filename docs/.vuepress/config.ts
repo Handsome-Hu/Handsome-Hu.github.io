@@ -47,6 +47,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                     {
                         text: '前端框架',
                         items: [
+                            {text: 'Webpack', link: '/catalog/021/'},
                             {text: 'Vue全家桶', link: '/catalog/020/'}
                         ]
                     }
