@@ -25,98 +25,105 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         nav: [
             {text: '首页', link: '/'},
             {
+                text: 'Java',
+                link: '/java/',
+                items: [
+                    {
+                        text: 'Java核心技术',
+                        items: [
+                            {text: 'Java基础', link: '/pages/7f049b/'},
+                            {text: 'Java并发编程', link: '/pages/7f049b/'},
+                            {text: 'JVM', link: '/pages/7f049b/'},
+                            {text: 'Java新特性', link: '/pages/7f049b/'},
+                        ]
+                    },
+                    {
+                        text: 'Spring生态',
+                        items: [
+                            {text: 'Spring5', link: '/pages/7f049b/'},
+                            {text: 'SpringMVC', link: '/pages/7f049b/'},
+                            {text: 'SpringBoot', link: '/pages/7f049b/'},
+                        ]
+                    },
+                    {
+                        text: '开源框架',
+                        items: [
+                            {text: 'MyBatis', link: '/pages/cc6386/'},
+                        ]
+                    }
+                ]
+            },
+            {
+                text: '基本功',
+                link: '/base/',
+                items: [
+                    {text: '计算机网络', link: '/pages/7f049b/'},
+                    {text: '操作系统', link: '/pages/7f049b/'},
+                    {text: '数据结构与算法', link: '/pages/b19901/'},
+                    {text: '设计模式', link: '/pages/b19901/'},
+                ]
+            },
+            {
+                text: '数据库',
+                link: '/db/',
+                items: [
+                    {
+                        text: 'SQL数据库',
+                        items: [
+                            {text: 'MySQL', link: '/pages/b19901/'},
+                            {text: 'Oracle', link: '/pages/04a594/'},
+                        ]
+                    },
+                    {
+                        text: 'NoSQL数据库',
+                        items: [
+                            {text: 'Redis', link: '/pages/f322db/'},
+                            {text: 'MongoDB', link: '/pages/948036/'},
+                        ]
+                    }
+                ]
+            },
+            {
                 text: '前端',
                 link: '/web/',
                 items: [
                     {
                         text: '页面样式',
                         items: [
-                            {text: 'HTML', link: '/catalog/000/'},
-                            {text: 'CSS', link: '/catalog/001/'},
+                            {text: 'HTML', link: '/pages/948036/'},
+                            {text: 'CSS', link: '/pages/56c2f3/'},
                         ]
                     },
                     {
                         text: 'JavaScript',
                         items: [
-                            {text: 'JavaScript基础', link: '/catalog/010/'},
-                            {text: 'JavaScript高级', link: '/catalog/011/'},
-                            {text: 'ECMAScript6教程', link: '/catalog/012/'},
-                            {text: 'TypeScript', link: '/catalog/013/'},
+                            {text: 'JavaScript基础', link: '/pages/0796ba76b4b55368/'},
+                            {text: 'ECMAScript6教程', link: '/pages/f344d070a1031ef7/'},
+                            {text: 'TypeScript', link: '/pages/822b08/'},
                         ]
                     },
                     {
                         text: '前端框架',
                         items: [
-                            {text: 'Webpack', link: '/catalog/021/'},
-                            {text: 'Vue全家桶', link: '/catalog/020/'}
+                            {text: 'Vue', link: '/pages/c660da/'},
+                            {text: 'Webpack', link: '/pages/389bf1/'},
                         ]
                     }
                 ]
             },
             {
-                text: '后端',
-                link: '/backend/',
+                text: '分布式',
+                link: '/distributed/',
                 items: [
-                    {
-                        text: 'Java核心技术',
-                        items: [
-                            {text: 'Java基础', link: '/catalog/100/'},
-                            {text: 'Java并发编程', link: '/catalog/101/'},
-                            {text: 'Java虚拟机', link: '/catalog/102/'},
-                        ]
-                    },
-                    {
-                        text: '开源框架',
-                        items: [
-                            {text: 'Spring5', link: '/catalog/110/'},
-                            {text: 'SpringMVC', link: '/catalog/111/'},
-                            {text: 'MyBatis', link: '/catalog/112/'},
-                            {text: 'SpringBoot', link: '/catalog/113/'},
-                        ]
-                    },
-                    {
-                        text: '数据存储',
-                        items: [
-                            {text: 'MySQL', link: '/catalog/120/'},
-                            {text: 'Redis', link: '/catalog/121/'},
-                        ]
-                    },
-                    {
-                        text: '分布式',
-                        items: [
-                            {text: '分布式架构设计', link: '/catalog/130/'},
-                            {text: '分布式服务治理', link: '/catalog/131/'},
-                            {text: 'SpringCloud微服务', link: '/catalog/132/'},
-                        ]
-                    },
+                    {text: 'NIO', link: '/pages/87065a/'},
+                    {text: 'Netty', link: '/pages/a300fa/'},
                 ]
             },
             {
-                text: '技术',
-                link: '/technology/',
+                text: '系统设计',
+                link: '/design/',
                 items: [
-                    {
-                        text: '内功心法',
-                        items: [
-                            {text: '数据结构与算法', link: '/catalog/200/'},
-                            {text: '设计模式', link: '/catalog/201/'},
-                        ]
-                    },
-                    {
-                        text: 'Web服务器',
-                        items: [
-                            {text: 'Tomcat', link: '/catalog/210/'},
-                            {text: 'Nginx', link: '/catalog/211/'},
-                        ]
-                    },
-                    {
-                        text: 'DevOps',
-                        items: [
-                            {text: 'Docker容器', link: '/catalog/220/'},
-                            {text: 'K8s容器编排系统', link: '/catalog/221/'},
-                            {text: 'CI&CD', link: '/catalog/222/'},
-                        ]
-                    },
+                    {text: 'RabbitMQ', link: '/pages/8f8d52/'},
                 ]
             },
             {
@@ -126,36 +133,20 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                     {
                         text: '技术文档',
                         items: [
-                            {text: 'GitHub技巧', link: '/catalog/300/'},
-                            {text: '博客搭建', link: '/catalog/301/'},
-							{text: '技术笔记', link: '/catalog/302/'},
-                        ]
-                    },
-                    {
-                        text: '精品收藏',
-                        items: [
-                            {text: '官方文档', link: '/catalog/310/'},
-                            {text: 'GitHub项目', link: '/catalog/311/'},
+                            {text: 'GitHub技巧', link: '/pages/180676/'},
+                            {text: '博客搭建', link: '/pages/180676/'},
+                            {text: '技术笔记', link: '/pages/f3cefb/'},
                         ]
                     },
                     {
                         text: '优质文章',
                         items: [
-                            {text: '小技巧', link: '/catalog/320/'},
-                            {text: '解决方案', link: '/catalog/321/'},
+                            {text: '小技巧', link: '/pages/62dd4b/'},
+                            {text: '解决方案', link: '/pages/8ef442/'},
                         ]
                     }
                 ]
-            },
-            {
-                text: '索引',
-                link: '/archives/',
-                items: [
-                    {text: '分类', link: '/categories/'},
-                    {text: '标签', link: '/tags/'},
-                    {text: '归档', link: '/archives/'},
-                ],
-            },
+            }
         ],
         sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
         logo: '/img/logo.png', // 导航栏logo
